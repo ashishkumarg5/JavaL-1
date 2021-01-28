@@ -4,6 +4,8 @@ public class MethodOverridingDemo {
 	public static void main(String[] args) {
 		Car car = new Car();
 		SUV suv = new SUV();
+		
+		SPORTS sports = new SPORTS();
 		//child class object can be assigned into parent class reference
 		Car newCar = new SUV();
 		Car oneMoreCar = new SPORTS();
@@ -18,6 +20,9 @@ public class MethodOverridingDemo {
 		System.out.println(newCar.getMaxSpeed("2500"));	//300
 		System.out.println(oneMoreCar.getMaxSpeed("2500"));
 		
+		System.out.println(SPORTS.getCarRegCity());
+		
+		sports.getCarDetails();
 	}
 	
 }

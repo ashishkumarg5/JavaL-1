@@ -15,4 +15,21 @@ public class SPORTS extends Car {
 		
 		return 0;
 	}
+	
+	
+	//public -> protected -> default -> private
+	public GetCarResponse getCarDetails() {
+		
+		Car car = new Car();
+		car.getQuote();
+		GetCarResponse resp = new GetCarResponse();
+		System.out.println("i20 " + "Asta " + "2020" );
+		
+		return resp;
+	}
+	
+	//This is not overriding, this re-declaration
+	public static String getCarRegCity() {
+		return "Jodhpur";
+	}
 }
